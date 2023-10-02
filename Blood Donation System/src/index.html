@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="js/myscript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="img/vecteezy_elegant-badge-with-green-color_9328233.jpg" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Donation</a></li>
+                    <li><a href="#">Blood Bank</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+
+            <!--Search Bar-->
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search" id="mysearch">
+                </div>    
+                    <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
+            </div>
+            <!--js-->
+            <script>
+                const icon = document.querySelector('.icon');
+                const search = document.querySelector('.search');
+                icon.onclick = function(){
+                search.classList.toggle('active');
+                }
+            </script>    
+            
+            <a class="login_btn" href="#"><button>Login / Register</button></a>
+        </header>
+        <!--footer-->
+        <hr>
+
+        
+        <hr>
+    </body>
+</html>
