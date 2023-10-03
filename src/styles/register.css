@@ -139,12 +139,13 @@ form .circle-form .category{
     width: 0;
 }
 
+}
+
+.rtx
+{
+    padding-right: 15px;
+}
+
 .option_c{ /* haritha*/
     border-color: #9b59b6;
-}
-
-.category label{ /* haritha*/
-    margin-right: 100px;
-}
-
 }
