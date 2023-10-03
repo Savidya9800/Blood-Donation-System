@@ -9,8 +9,8 @@
 
 li, a, button{
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 550;
+    font-size: 17px;
     color: black;
     text-decoration: none;
 }
@@ -43,7 +43,7 @@ header{
 }
 
 .nav_links li a:hover{
-    color: rgb(255, 35, 0);
+    color: rgb(240, 14, 14);
 }
 
 /* nav .animation{
@@ -59,7 +59,7 @@ header{
 button{
     margin-right: -100px;
     padding: 9px 25px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 10, 10);
     border: none;
     border-radius: 50px;
     cursor:pointer;
@@ -67,18 +67,18 @@ button{
 }
 
 button:hover{
-    background-color: rgb(205, 25, 10);
+    background-color: rgb(236, 27, 16);
 }
 
 /* search bar */
 .search{
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background: #fff;
-    border-radius: 60px;
+    border-radius: 20px;
     transition: 0.5s;
-    box-shadow:0 0 0 5px #2573ef;
+    box-shadow:0 0 0 4px #2d2b2b;
     overflow: hidden;
 }
 
@@ -90,10 +90,10 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background: #fff;
-    border-radius: 60px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
