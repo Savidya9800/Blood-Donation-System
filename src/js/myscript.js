@@ -3,3 +3,5 @@ const icon = document.querySelector('.icon');
                 icon.onclick = function(){
                 search.classList.toggle('active');
                 }
+
+                

@@ -3,33 +3,70 @@
     <head>
         <title>Blood Donation System</title>
         <link rel="stylesheet" href="styles/header.css">
+        <script src="js/myscript.js"></script>
     </head>
     <body>
-        <header>
-            <img class="logo" src="img/vecteezy_elegant-badge-with-green-color_9328233.jpg" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="blood_bank.html">Blood Bank</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <!-- <div class="animation start-home"></div> -->
-                </ul>
+        <div class="hero">
+             <nav>
+                <img class="logo" src="img/user profile icons/logo.png" alt="logo">
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blood_bank.html">Blood Bank</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+                <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
+               
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="img/user profile icons/user.png">
+                            <h3>Savidya Jayalath</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/setting.png">
+                            <p>Setting & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
             </nav>
-            <!--Search Bar-->
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="Search" id="mysearch">
-                </div>    
-                    <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
-            </div>
-            <!--js-->    
-            <script src="js/myscript.js"></script>
+        </div>
+        <script>
+        let subMenu = document.getElementById("subMenu");
+                function toggleMenu(){
+                    subMenu.classList.toggle("open-menu");
+                }  
+        </script>
+      <!--Search Bar-->
+        <div class="search">
+            <div class="icon"></div>
+             <div class="input">
+                 <input type="text" placeholder="Search" id="mysearch">
+             </div>    
+                 <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
+        </div>
+        <!--js-->    
+         <script src="js/myscript.js"></script>
             
-            <a class="login_btn" href="register.html"><button>Login / Register</button></a> <!--not a member ekata link karanna onee-->
-        </header>
+         <!-- <a class="login_btn" href="register.html"><button>Login / Register</button></a>          -->
     </body>
 </html>
