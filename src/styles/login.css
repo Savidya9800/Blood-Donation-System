@@ -1,0 +1,15 @@
+body {
+    background-color:antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.one {
+    font-size: 50px;
+    top: 50%;
+    right: 50%;
+    background: white;
+}
+#text_1 {
+    width:500px;
+
+}
