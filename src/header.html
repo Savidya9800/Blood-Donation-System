@@ -49,24 +49,19 @@
                     </div>
                 </div>
             </nav>
-        </div>
+            <!--Seach bar-->
+                <div class="container2">
+                <form action="https://www.google.com/search" method="get" class="seach-bar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><img src="img/search.png"></button>
+                </form>
+                </div>
+            </div>
         <script>
         let subMenu = document.getElementById("subMenu");
                 function toggleMenu(){
                     subMenu.classList.toggle("open-menu");
                 }  
         </script>
-      <!--Search Bar-->
-        <div class="search">
-            <div class="icon"></div>
-             <div class="input">
-                 <input type="text" placeholder="Search" id="mysearch">
-             </div>    
-                 <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
-        </div>
-        <!--js-->    
-         <script src="js/myscript.js"></script>
-            
-         <!-- <a class="login_btn" href="register.html"><button>Login / Register</button></a>          -->
     </body>
 </html>
