@@ -1,0 +1,41 @@
+#header {
+    font-size: 80px;
+}
+
+.blood1 {
+    margin: 20px;
+    padding: 30px;
+    position: absolute;
+    background-color: beige;
+}
+
+.blood2 {
+    margin: 20px;
+    padding: 30px;
+    background-color: cornsilk;
+}
+
+#btn1 {
+    margin: 40px;
+    width: 20%;
+    height: 70px;
+    font-size: 30px;
+    background-color: red;
+
+}
+
+#btn2 {
+    margin: 40px;
+    width: 20%;
+    height: 70px;
+    font-size: 30px;
+    background-color: red;
+
+}
+.bus {
+    float: right;
+}
+.image1 {
+    width: 20%;
+
+}
