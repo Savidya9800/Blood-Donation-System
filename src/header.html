@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blood Donation System</title>
+        <title>Life Blood Save a Life</title>
         <link rel="stylesheet" href="styles/header.css">
-        <script src="js/myscript.js"></script>
     </head>
     <body>
         <div class="hero">
              <nav>
-                <img class="logo" src="img/user profile icons/logo.png" alt="logo">
+                <img class="logo" src="img/Life Blood.png" alt="logo">
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="donation.html">Donation</a></li>
@@ -17,8 +16,11 @@
                 <li><a href="about_us.html">About us</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
             </ul>
+            <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
-               
+                <!--Login Button-->
+                <button class="login_b">LOGIN</button>
+                <!--User Profile-->
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
@@ -44,11 +46,12 @@
                         <a href="#" class="sub-menu-link">
                             <img src="img/user profile icons/logout.png">
                             <p>Logout</p>
-                            <span>></span>
                         </a>
                     </div>
                 </div>
             </nav>
+            <!--Logo image-->
+            <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
             <!--Seach bar-->
                 <div class="container2">
                 <form action="https://www.google.com/search" method="get" class="seach-bar">
@@ -57,6 +60,8 @@
                 </form>
                 </div>
             </div>
+    <!--js link-->        
+        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
         <script>
         let subMenu = document.getElementById("subMenu");
                 function toggleMenu(){
