@@ -1,92 +1,158 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Make an Appoinment</title>
+        <title>Life Blood Save a Life</title>
+        <!--set an icon to browser-->
+        <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/appoinment.css">
     </head>
     <body>
-        <div class="container">
-            <div class="heading">Make an Appoinment</div>
-            <form action="#">
-                <div class="card-details">
-                    <div class="card-box">
-                        <spam class="details">First Name</spam>
-                        <input type="text" placeholder="First Name"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Age</spam>
-                        <input type="text" placeholder="Age"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Last Name</spam>
-                        <input type="text" placeholder="Last Name"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Weight</spam>
-                        <input type="text" placeholder="Weight"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Email</spam>
-                        <input type="email" placeholder="Email Address"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Address</spam>
-                        <input type="text" placeholder="Address"> 
-                    </div>   
-                    <div class="card-box">
-                        <spam class="details">Date of Birth</spam>
-                        <input type="date"> 
-                    </div> 
-                    <div class="card-box">
-                        <spam class="details">Blood Group</spam>
-                        <select class="option_c">
-                            <option>A+</option>
-                            <option>A-</option>
-                            <option>B+</option>
-                            <option>B-</option>
-                            <option>AB+</option>
-                            <option>AB-</option>
-                            <option>O+</option>
-                            <option>O-</option>
-                        </select>
-                    </div>  
-                </div>
-                <div class="circle-form">
-                    <spm class="circle-title">Gender</spm>
-                    <div class="category">
-                        <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Male</label>
-                        <input type="radio" name="Gender"><label for="" class="rtx">Female</label>
+        <div class="hero">
+             <nav>
+                <!--logo_txt-->
+                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blood_bank.html">Blood Bank</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <!--user image-->
+                <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
+                <!--User Profile-->
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="img/user profile icons/user.png">
+                            <h3>Savidya Jayalath</h3>
+                        </div>
+                        <hr>
+                        <a href="edit_profile.html" class="sub-menu-link">
+                            <img src="img/user profile icons/profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/setting.png">
+                            <p>Setting & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="home.html" class="sub-menu-link">
+                            <img src="img/user profile icons/logout.png">
+                            <p>Logout</p>
+                        </a>
                     </div>
                 </div>
-                <div class="circle-form">
-                    <spm class="circle-title">Appoinment Type</spm>
-                    <div class="category">
-                        <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Blood</label>
-                        <input type="radio" name="Gender"><label for="" class="rtx">Plasma</label>
-                    </div>
+                <!--Login Button-->
+                <button class="login_b">LOGIN</button> 
+            </nav>
+            <!--Logo image-->
+            <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
+            <!--Seach bar-->
+                <div class="container2">
+                <form action="https://www.google.com/search" method="get" class="seach-bar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><img src="img/search.png"></button>
+                </form>
                 </div>
-                <hr>
-                <!--username pw section-->
-                <div class="card-details">
-                <div class="card-box">
-                    <spam class="details">Username</spam>
-                    <input type="text" placeholder="Enter Valid Username"> 
+                <div class="container">
+                    <div class="heading">Make an Appoinment</div>
+                    <form action="#">
+                        <div class="card-details">
+                            <div class="card-box">
+                                <spam class="details">First Name</spam>
+                                <input type="text" placeholder="First Name"> 
+                            </div>
+                            <div class="card-box">
+                                <spam class="details">Age</spam>
+                                <input type="text" placeholder="Age"> 
+                            </div>
+                            <div class="card-box">
+                                <spam class="details">Last Name</spam>
+                                <input type="text" placeholder="Last Name"> 
+                            </div>
+                            <div class="card-box">
+                                <spam class="details">Weight</spam>
+                                <input type="text" placeholder="Weight"> 
+                            </div>
+                            <div class="card-box">
+                                <spam class="details">Email</spam>
+                                <input type="email" placeholder="Email Address"> 
+                            </div>
+                            <div class="card-box">
+                                <spam class="details">Address</spam>
+                                <input type="text" placeholder="Address"> 
+                            </div>   
+                            <div class="card-box">
+                                <spam class="details">Date of Birth</spam>
+                                <input type="date"> 
+                            </div> 
+                            <div class="card-box">
+                                <spam class="details">Blood Group</spam>
+                                <select class="option_c">
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="circle-form">
+                            <spm class="circle-title">Gender</spm>
+                            <div class="category">
+                                <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Male</label>
+                                <input type="radio" name="Gender"><label for="" class="rtx">Female</label>
+                            </div>
+                        </div>
+                        <div class="circle-form">
+                            <spm class="circle-title">Appoinment Type</spm>
+                            <div class="category">
+                                <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Blood</label>
+                                <input type="radio" name="Gender"><label for="" class="rtx">Plasma</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--username pw section-->
+                        <div class="card-details">
+                        <div class="card-box">
+                            <spam class="details">Username</spam>
+                            <input type="text" placeholder="Enter Valid Username"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Password</spam>
+                            <input type="password" placeholder="Enter Valid Password"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Confirm Password</spam>
+                            <input type="password" placeholder="Confirm Password"> 
+                        </div>
+                         </div>
+                        <div class="button">
+                            <input type="submit" value="Continue">
+                        </div>
+                    </form>
                 </div>
-                <div class="card-box">
-                    <spam class="details">Password</spam>
-                    <input type="password" placeholder="Enter Valid Password"> 
-                </div>
-                <div class="card-box">
-                    <spam class="details">Confirm Password</spam>
-                    <input type="password" placeholder="Confirm Password"> 
-                </div>
-                 </div>
-                <div class="button">
-                    <input type="submit" value="Continue">
-                </div>
-            </form>
-        </div>
-    </div>
+            </div>
+            </div>
+    <!--js link-->        
+        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+        <script>
+        let subMenu = document.getElementById("subMenu");
+                function toggleMenu(){
+                    subMenu.classList.toggle("open-menu");
+                }  
+        </script>
     </body>
 </html>
