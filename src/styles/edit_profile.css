@@ -6,6 +6,10 @@
     visibility: hidden;
 }
 
+.logo_img{
+    visibility: hidden;
+}
+
 body {
     padding-bottom: 0px;
     display: block;
@@ -19,7 +23,7 @@ body {
 .btn-default {
     color: rgb(26, 26, 26);
     background  : rgba(0, 0, 0, 0);
-    margin-right: 410px; 
+    margin-right: 100px; 
 
 }
 
@@ -120,15 +124,17 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 
 .py-3{
     color: rgb(26, 26, 26);
-    margin-left: 30px;
-    margin-top: -250px;
+    margin-left: 110px;
+    margin-top: -280px;
 }
 
 #container4{
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
-    padding-right: 400px;
-    margin-top: -10px;
+    margin-right: 100px;
+    margin-top: -20px;
+    margin-left: 100px;
+    padding-top: 10px;
 }
 
 .btn_del{
