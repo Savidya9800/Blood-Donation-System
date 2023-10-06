@@ -7,22 +7,28 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/login.css">
     </head>
+    
     <body>
-        <div class="one">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="two">
-                    <input type="text" id="text_1" placeholder="Username"  required>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
                 </div>
-                <div class="two">
-                    <input type="text" id="text_1" placeholder="Password"  required>
-                    
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Password</label>
                 </div>
-                <div class="four">Forget Password</div>
-                <input  type="submit">
-                <div class="five">Not an Account? Sign up<a href="register.html"></a>
+                <div class="pass">Forgot Password ?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member ? <a href="#">Signup</a>
                 </div>
             </form>
         </div>
+        
     </body>
 </html>
