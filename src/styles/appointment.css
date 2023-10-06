@@ -82,12 +82,20 @@ body {
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
+<<<<<<< HEAD
     background: #69275c;
+=======
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+>>>>>>> 0c3e289f845ab6de6b95f129c278195b69eb4049
     width: 200px;
     border-radius: 10px;
 }
 
 .btn input:hover {
+<<<<<<< HEAD
     background: linear-gradient(135deg, #05073a, #dc0606ca);
     color: white;
+=======
+    background: #69275c;
+>>>>>>> 0c3e289f845ab6de6b95f129c278195b69eb4049
 }
