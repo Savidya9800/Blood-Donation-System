@@ -2,12 +2,21 @@
 <html>
     <head>
         <title>Life Blood Save a Life | Contact</title>
+        <!--set an icon to browser-->
+        <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+
     </head>
     <body>
         <div class="hero">
              <nav>
-                <a href="home.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+                <!--logo_txt-->
+                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="donation.html">Donation</a></li>
@@ -18,8 +27,6 @@
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
-                <!--Login Button-->
-                <button class="login_b">LOGIN</button>
                 <!--User Profile-->
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
@@ -28,27 +35,29 @@
                             <h3>Savidya Jayalath</h3>
                         </div>
                         <hr>
-                        <a href="#" class="sub-menu-link">
+                        <a href="edit_profile.html" class="sub-menu-link">
                             <img src="img/user profile icons/profile.png">
                             <p>Edit Profile</p>
                             <span>></span>
                         </a>
-                        <a href="#" class="sub-menu-link">
+                        <a href="setting_privacy.html" class="sub-menu-link">
                             <img src="img/user profile icons/setting.png">
                             <p>Setting & Privacy</p>
                             <span>></span>
                         </a>
-                        <a href="#" class="sub-menu-link">
+                        <a href="https://www.who.int/campaigns/world-blood-donor-day/2018/who-can-give-blood" target="_blank" class="sub-menu-link">
                             <img src="img/user profile icons/help.png">
                             <p>Help & Support</p>
                             <span>></span>
                         </a>
-                        <a href="#" class="sub-menu-link">
+                        <a href="login.html" class="sub-menu-link">
                             <img src="img/user profile icons/logout.png">
                             <p>Logout</p>
                         </a>
                     </div>
                 </div>
+                <!--Login Button-->
+                <button class="login_b">LOGIN</button> 
             </nav>
             <!--Logo image-->
             <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
@@ -59,21 +68,28 @@
                     <button type="submit"><img src="img/search.png"></button>
                 </form>
                 </div>
+                <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <div class="container">
+                        <div class="main">
+                            <div class="content">
+                                <h2>Contact Us</h2>
+                                <form action="#" method="post">
+                                    <input type="text" name="name" placeholder="Enter Your Name">
+                                  
+                                    <input type="email" name="name" placeholder="Enter Your Email">
+                                    <textarea name="message" placeholder="Your Message"></textarea>                   
+                         <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            <div class="form-img">
+                                <img src="img/bg1.png" alt="contact">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-    <!--js link-->        
-        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
-        <script>
-        let subMenu = document.getElementById("subMenu");
-                function toggleMenu(){
-                    subMenu.classList.toggle("open-menu");
-                }  
-        </script>
-        <!--methana code eka gahanna............-->
-        <!--methana code eka gahanna............-->
-        <!--methana code eka gahanna............-->
-        <!--methana code eka gahanna............-->
-        <!--methana code eka gahanna............-->
-        <!--methana code eka gahanna............-->
+            
 
-    </body>
+
 </html>

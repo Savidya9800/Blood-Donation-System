@@ -1,0 +1,164 @@
+.login_b{
+    visibility: hidden;
+}
+
+.container2{
+    visibility: hidden;
+}
+
+.logo_img{
+    visibility: hidden;
+}
+
+body {
+    padding-bottom: 0px;
+    display: block;
+}
+
+.ui-w-80 {
+    width : 100px !important;
+    height: auto;
+}
+
+.btn-default {
+    color: rgb(26, 26, 26);
+    background  : rgba(0, 0, 0, 0);
+    margin-right: 100px; 
+
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background  : transparent;
+    color       : #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #3B5998;
+    color       : #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #000;
+    color       : #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.py-3{
+    color: rgb(26, 26, 26);
+    margin-left: 110px;
+    margin-top: -280px;
+}
+
+#container4{
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 100px;
+    margin-top: -20px;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+.btn_del{
+    padding: 3px;
+    color: #fff;
+    background: rgb(255, 8, 8);
+    border-color: rgb(255, 8, 8);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadoq,transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn_del:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#txt{
+    color: #000;
+    font-size: small;
+}
+
