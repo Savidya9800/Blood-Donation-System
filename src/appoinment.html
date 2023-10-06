@@ -1,92 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Make an Appoinment</title>
+        <title>Make an Appointment</title>
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/appoinment.css">
+        <link rel="stylesheet" href="styles/appointment.css">
     </head>
     <body>
-        <div class="container">
-            <div class="heading">Make an Appoinment</div>
-            <form action="#">
-                <div class="card-details">
-                    <div class="card-box">
-                        <spam class="details">First Name</spam>
-                        <input type="text" placeholder="First Name"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Age</spam>
-                        <input type="text" placeholder="Age"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Last Name</spam>
-                        <input type="text" placeholder="Last Name"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Weight</spam>
-                        <input type="text" placeholder="Weight"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Email</spam>
-                        <input type="email" placeholder="Email Address"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Address</spam>
-                        <input type="text" placeholder="Address"> 
-                    </div>   
-                    <div class="card-box">
-                        <spam class="details">Date of Birth</spam>
-                        <input type="date"> 
-                    </div> 
-                    <div class="card-box">
-                        <spam class="details">Blood Group</spam>
-                        <select class="option_c">
-                            <option>A+</option>
-                            <option>A-</option>
-                            <option>B+</option>
-                            <option>B-</option>
-                            <option>AB+</option>
-                            <option>AB-</option>
-                            <option>O+</option>
-                            <option>O-</option>
-                        </select>
-                    </div>  
+        <div class="deco">
+            <h2>Make an Appointment</h2> 
+            <form method="post">
+                <div class="text_field">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Full Name"> 
                 </div>
-                <div class="circle-form">
-                    <spm class="circle-title">Gender</spm>
-                    <div class="category">
-                        <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Male</label>
-                        <input type="radio" name="Gender"><label for="" class="rtx">Female</label>
+                <div class="text_field">
+                    <label>Address</label>
+                    <input type="text" placeholder="Enter Address"> 
+                </div>       
+                <div class="text_field">
+                    <label id="age_text">Age</label>
+                    <input type="text" placeholder="Enter Age"> 
+                </div>    
+                <div class="text_field">
+                    <label>Weight</label>
+                    <input type="text" placeholder="Enter Weight"> 
+                </div>
+                <div class="text_field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Email"> 
+                </div>      
+                <div class="type">
+                    <label>Appoinment Type</label>
+                    <div class="appoinment_type">
+                        <input type="radio" name="Appoinment Type">
+                        <label for="blood">Blood</label>
+                        <input type="radio" name="Appoinment Type">
+                        <label for="plasma">Plasma</label>
                     </div>
                 </div>
-                <div class="circle-form">
-                    <spm class="circle-title">Appoinment Type</spm>
-                    <div class="category">
-                        <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Blood</label>
-                        <input type="radio" name="Gender"><label for="" class="rtx">Plasma</label>
-                    </div>
+                <p>I would like to schedule an appoinment for a blood donation. My preffered date for the appoinment is as follows.</p>
+                <div class="text_field">
+                    <label>Date</label>
+                    <input type="date" placeholder="Date">
                 </div>
-                <hr>
-                <!--username pw section-->
-                <div class="card-details">
-                <div class="card-box">
-                    <spam class="details">Username</spam>
-                    <input type="text" placeholder="Enter Valid Username"> 
-                </div>
-                <div class="card-box">
-                    <spam class="details">Password</spam>
-                    <input type="password" placeholder="Enter Valid Password"> 
-                </div>
-                <div class="card-box">
-                    <spam class="details">Confirm Password</spam>
-                    <input type="password" placeholder="Confirm Password"> 
-                </div>
-                 </div>
-                <div class="button">
-                    <input type="submit" value="Continue">
+                <p>I understand the importance of blood donation and I love to contribute to this.</p>
+                <div class="btn">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
-    </div>
     </body>
 </html>

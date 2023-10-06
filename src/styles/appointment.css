@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg,rgb(138, 22, 22),black);
+    background-size: cover;
+
+}
+
+.deco {
+    width: 50%;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.deco h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    color: brown;
+    border-bottom: 1px solid silver;
+}
+
+.deco .text_field {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.text_field input {
+    font-size: 16px;
+}
+
+.deco .text_field label {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.text_field input {
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.type label {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.appoinment_type {
+    margin: 10px 20px;
+    
+}
+
+.appoinment_type label {
+    padding: 0 5px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn input {
+    display: block;
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background: darksalmon;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.btn input:hover {
+    background: brown;
+    color: white;
+}
