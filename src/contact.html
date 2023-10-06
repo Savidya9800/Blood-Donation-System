@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blood Donation System</title>
+        <title>Life Blood Save a Life | Contact</title>
+        <!--set an icon to browser-->
+        <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/contact.css">
         <meta charset="UTF-8">
@@ -12,55 +14,75 @@
 
     </head>
     <body>
-        <header>
-            <img class="logo" src="img/vecteezy_elegant-badge-with-green-color_9328233.jpg" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="blood_bank.html">Blood Bank</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <!-- <div class="animation start-home"></div> -->
-                </ul>
+        <div class="hero">
+             <nav>
+                <!--logo_txt-->
+                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blood_bank.html">Blood Bank</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <!--user image-->
+                <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
+                <!--User Profile-->
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="img/user profile icons/user.png">
+                            <h3>Savidya Jayalath</h3>
+                        </div>
+                        <hr>
+                        <a href="edit_profile.html" class="sub-menu-link">
+                            <img src="img/user profile icons/profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/setting.png">
+                            <p>Setting & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="home.html" class="sub-menu-link">
+                            <img src="img/user profile icons/logout.png">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+                <!--Login Button-->
+                <button class="login_b">LOGIN</button> 
             </nav>
-            <!--Search Bar-->
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="Search" id="mysearch">
-                </div>    
-                    <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
+            <!--Logo image-->
+            <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
+            <!--Seach bar-->
+                <div class="container2">
+                <form action="https://www.google.com/search" method="get" class="seach-bar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><img src="img/search.png"></button>
+                </form>
+                </div>
+                <!--methana code eka gahanna............-->
+                <!--methana code eka gahanna............-->
             </div>
             <!--js-->    
             <script src="js/myscript.js"></script>
             
             <a class="login_btn" href="register.html"><button>Login / Register</button></a> <!--not a member ekata link karanna onee-->
-        
-        </header>
-
-        <div class="contact-form">
-            <h1>Contact Us</h1>
-            <div class="container">
-                <div class="main">
-                    <div class="content">
-                        <h2>Contact Us</h2>
-                        <form action="#" method="post">
-                            <input type="text" name="name" placeholder="Enter Your Name">
-                          
-                            <input type="email" name="name" placeholder="Enter Your Email">
-                            <textarea name="message" placeholder="Your Message"></textarea>                   
-                 <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                    <div class="form-img">
-                        <img src="img/bg1.png" alt="contact">
-                    </div>
-                </div>
-            </div>
-        </div> 
-        
     </body>
+        <div class="container">
+            <form>
+                <h1>contact Us Form</h1>
+                
+            </form>
+        </div>
+
 
 </html>
