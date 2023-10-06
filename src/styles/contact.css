@@ -9,7 +9,7 @@
     position: relative;
     min-height: 100vh;
     z-index: 0;
-    background: #69275c;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
     padding: 30px;
     justify-content: center;
     display: grid;
@@ -68,7 +68,7 @@ input{
 }
 .btn:hover,
 button:hover{
-    color: #97359c;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
     transition: 0.5s ease;
 }
 .contact-form form{

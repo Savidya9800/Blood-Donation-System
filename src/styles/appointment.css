@@ -10,7 +10,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(40deg,rgb(138, 22, 22),black);
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
     background-size: cover;
 
 }
@@ -82,12 +82,12 @@ body {
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
-    background: darksalmon;
+    background: #69275c;
     width: 200px;
     border-radius: 10px;
 }
 
 .btn input:hover {
-    background: brown;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
     color: white;
 }
