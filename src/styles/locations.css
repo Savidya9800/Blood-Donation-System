@@ -1,0 +1,11 @@
+.locate {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.map {
+    float: right;
+    width: 30%;
+}
