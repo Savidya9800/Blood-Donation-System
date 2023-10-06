@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blood Donation System</title>
+        <title>Life Blood Save a Life</title>
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/after_login.css">
     </head>
     <body>
-        <header>
-            <img class="logo" src="img/vecteezy_elegant-badge-with-green-color_9328233.jpg" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="blood_bank.html">Blood Bank</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
+        <div class="hero">
+             <nav>
+                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blood_bank.html">Blood Bank</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <!--user image-->
+                <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
+                <!--User Profile-->
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="img/user profile icons/user.png">
+                            <h3>Savidya Jayalath</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/setting.png">
+                            <p>Setting & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="img/user profile icons/logout.png">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
             </nav>
-            <!--Search Bar-->
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="Search" id="mysearch">
-                </div>    
-                    <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
+            <!--Logo image-->
+            <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
+            <!--Seach bar-->
+                <div class="container2">
+                <form action="https://www.google.com/search" method="get" class="seach-bar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><img src="img/search.png"></button>
+                </form>
+                </div>
             </div>
-            <!--js-->    
-            <script src="js/myscript.js"></script>
-        </header>
-
-        <img class="up_icon" src="img/user profile icon.jpg" alt="user profile icon">
+    <!--js link-->        
+        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+        <script>
+        let subMenu = document.getElementById("subMenu");
+                function toggleMenu(){
+                    subMenu.classList.toggle("open-menu");
+                }  
+        </script>
+        <!--methana code eka gahanna............-->
+        <!--methana code eka gahanna............-->
+        <!--methana code eka gahanna............-->
+        <!--methana code eka gahanna............-->
+        <!--methana code eka gahanna............-->
+        <!--methana code eka gahanna............-->
     </body>
 </html>
