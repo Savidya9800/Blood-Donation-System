@@ -1,67 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
-        <title>Blood Donation System</title>
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/blood_bank.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header>
-            <img class="logo" src="img/vecteezy_elegant-badge-with-green-color_9328233.jpg" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="blood_bank.html">Blood Bank</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-            </nav>
-            <!--Search Bar-->
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="Search" id="mysearch">
-                </div>    
-                    <spam class="clear" onclick="document.getElementById('mysearch').value = '' "></spam>
-            </div>
-            <!--js-->    
-            <script src="js/myscript.js"></script>
-            
-            <a class="login_btn" href="login.html"><button>Login / Register</button></a> <!--not a member ekata link karanna onee-->
-        </header>
-        <div class="blood1">
-            <h2 id="header">Where can I donate?</h2>
-            <div class="image1">
-                <a id="button1" href="location.html"><button id="btn1" >Find a location<img alt="Map Marker Icon" src="img/map marker icon.jpg"></button></a>
-            </div>
-            <div class="bus">
-                <img alt="bus" src="img/bus.jpg">
-            </div>
-        </div>
-        <div class="blood2">    
-            <h2 id="header">Do you know about blood groups?</h2>
-            <a id="button1" href="blood_groups.html"><button id="btn2" >Blood Groups</button></a>
-        </div>
-    </body>
-</html>
-
-
-=======
-        <title>Life Blood Save a Life | Blood Bank</title>
+        <title>Life Blood Save a Life</title>
         <!--set an icon to browser-->
         <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/bloodbank.css">
+        <script src="js/myscript.js"></script>
+
+        <script>
+            alert("Blood bank page is loaded");
+        </script>
     </head>
     <body>
         <div class="hero">
              <nav>
-                <!--set an icon to browser-->
-                <a href="home.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+                <!--logo_txt-->
+                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="donation.html">Donation</a></li>
@@ -72,8 +27,6 @@
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
-                <!--Login Button-->
-                <button class="login_b">LOGIN</button>
                 <!--User Profile-->
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
@@ -103,6 +56,8 @@
                         </a>
                     </div>
                 </div>
+                <!--Login Button-->
+                <button class="login_b">LOGIN</button> 
             </nav>
             <!--Logo image-->
             <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
@@ -113,34 +68,38 @@
                     <button type="submit"><img src="img/search.png"></button>
                 </form>
                 </div>
+            </div>
+            <div class="page">
                 <div class="blood1">
                     <h2 id="header">Where can I donate?</h2>
-                    <div class="two">
-                        <a href="location.html"><button id="btn1">Find Location</button></a>
-                        <div class="image1">
-                            <img src="img/" alt="">
-                        </div>
+                    <div class="btn-designs">
+                        <button id="btn1" onclick="bloodDonation('btn1')">Find Location</button>
                     </div>
+                    <div class="image1">
+                        <img src="img/" alt="">
+                     </div>
                 </div>
                 <div class="blood2">
                     <h2 id="header">Do you know about blood groups?</h2>
-                    <div class="four">
-                        <a href="blood_groups.html"><button id="btn2">Blood Groups</button></a>
-                        <div class="image2">
-                            <img src="img/" alt="">
-                        </div>
+                    <div class="btn-designs">
+                        <button id="btn2" onclick="bloodDonation('btn2')">Blood Groups</button>
+                    </div>
+                    <div class="image2">
+                        <img src="img/" alt="">
                     </div>
                 </div>
                 <div class="blood3">
                     <h2 id="header">Updates</h2>
-                    <div class="six">
-                        <a href="updates.html"><button id="btn3">Updates</button></a>
-                        <div class="image3">
-                            <img src="img/" alt="">
-                        </div>
+                    <div class="btn-designs">
+                        <button id="btn3" onclick="bloodDonation('btn3')">Updates</button>
+                    </div>
+                    <div class="image3">
+                        <img src="img/" alt="">
                     </div>
                 </div>
             </div>
+
+           
     <!--js link-->        
         <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
         <script>
@@ -151,4 +110,3 @@
         </script>
     </body>
 </html>
->>>>>>> 73278f0631063247501f939c61754fd2f7289e49
