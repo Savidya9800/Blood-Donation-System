@@ -1,0 +1,20 @@
+h1 {
+    text-indent: 50px;
+    color: black;
+    font-size: 300%;
+    font-style:inherit;
+}
+
+h2 {
+    text-indent: 50px;
+    color: rgb(63, 58, 58);
+    font-size: 150%;
+    font-style:inherit;
+}
+
+p {
+    text-indent: 50px;
+    color: rgb(63, 58, 58);
+    font-size: 110%;
+    font-style:inherit;
+}
