@@ -1,5 +1,5 @@
-h2 #header {
-    font-size: 80px;
+.header {
+    font-size: 60px;
 }
 
 .two a:hover {
@@ -66,5 +66,5 @@ h2 #header {
 }
 
 .page{
-    margin-top: -550px;
+    margin-top: -350px;
 }
