@@ -1,6 +1,6 @@
 body{
     display: flex;
-    height: 200vh;
+    height: 300vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #05073a, #dc0606ca);
@@ -30,10 +30,10 @@ margin: 0 auto;
     margin: 0 -25px;
 }
 .inner-section{
-    width: 110%;
+    width: 107%;
     float: right;
     background-color: #d491f3;
-    padding: 100px;
+    padding: 90px;
     box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
 }
 .inner-section h1{
@@ -75,6 +75,24 @@ margin: 0 auto;
     transition: 0.5s ease;
 }
 
+.container_info{
+    max-width: 1200px;
+    margin: auto;
+    background: #e9e4e4;
+    overflow: auto;
+}
+.info_pic{
+    
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
 
 
 
