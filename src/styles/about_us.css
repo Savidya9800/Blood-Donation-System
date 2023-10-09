@@ -78,16 +78,16 @@ margin: 0 auto;
 .container_info{
     max-width: 1200px;
     margin: auto;
-    background: #e9e4e4;
+    background: #ffffff;
     overflow: auto;
 }
 .info_pic{
     
     margin: 15px;
-    border: 1px solid #ccc;
+    border: 5px solid #000000;
     float: left;
     width: 270px;
-    height: 270px;
+    height: 320px;
 }
 .desc{
     padding: 15px;
