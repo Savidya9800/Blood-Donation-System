@@ -7,7 +7,7 @@ body{
     display: block;
 }
 .container_i{
- margin-top: -450px;
+margin-top: -450px;
 display: flex;
 width: 100px;
 max-width: 1300px;
@@ -21,16 +21,16 @@ margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: left;
-    
-    
+  
 }
+
 .colage_item{
     width: calc(20% + 450px);
-    padding: 0 80px;
+    padding: 0 40px;
     margin: 0 -25px;
 }
 .inner-section{
-    width: 120%;
+    width: 110%;
     float: right;
     background-color: #d491f3;
     padding: 100px;
