@@ -133,3 +133,7 @@ textarea{
 .container2{
     visibility: hidden;
 }
+
+.login_b{
+    visibility: hidden;
+}

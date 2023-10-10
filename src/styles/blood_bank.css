@@ -85,3 +85,7 @@
 .page{
     margin-top: -350px;
 }
+
+.login_b{
+    visibility: hidden;
+}
