@@ -6,6 +6,7 @@
     font-family: 'poppins',sans-serif;
 }
 .contact-form{
+    margin-top: -300px;
     position: relative;
     min-height: 100vh;
     z-index: 0;
@@ -123,4 +124,12 @@ textarea{
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
+}
+
+.logo_img{
+    visibility: hidden;
+}
+
+.container2{
+    visibility: hidden;
 }
