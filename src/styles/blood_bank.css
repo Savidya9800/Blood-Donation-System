@@ -2,10 +2,6 @@
     font-size: 60px;
 }
 
-.two a:hover {
-    background: white;
-}
-
 .blood1 {
     margin: 20px;
     padding: 30px;
@@ -37,7 +33,8 @@
 }
 
 .btn-designs #btn2 {
-    margin: 20px 0 -20px 100px;
+    margin: 50px 0 30px 100px;
+    padding: 20px;
     height: 70px;
     width: 20%;
     background: #69275c;
@@ -60,6 +57,26 @@
     font-weight: 600;
 }
 
+#btn1:hover {
+    background: red;
+}
+
+#btn2:hover {
+    background: red;
+}
+
+#btn3:hover {
+    background: red;
+}
+
+.blood1 p {
+    font-weight: 500;
+}
+
+.blood2 p {
+    font-weight: 500;
+}
+
 .image1 {
     width: 20%;
 
@@ -67,4 +84,8 @@
 
 .page{
     margin-top: -350px;
+}
+
+.login_b{
+    visibility: hidden;
 }

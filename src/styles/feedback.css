@@ -136,3 +136,7 @@ textarea{
         border-top-right-radius: 8px;
     }
 }
+
+.login_b{
+    visibility: hidden;
+}
