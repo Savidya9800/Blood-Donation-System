@@ -10,7 +10,7 @@
     position: relative;
     min-height: 100vh;
     z-index: 0;
-    background: linear-gradient(135deg, #05073a, #dc0606ca);
+    background: linear-gradient(135deg, #05073a, #cd2929cd);
     padding: 30px;
     justify-content: center;
     display: grid;
