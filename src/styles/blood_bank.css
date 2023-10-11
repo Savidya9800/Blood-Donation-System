@@ -83,9 +83,13 @@
 }
 
 .page{
-    margin-top: -350px;
+    margin-top: -560px;
 }
 
 .login_b{
     visibility: hidden;
+}
+
+body{
+    background-color: #eceaff;
 }

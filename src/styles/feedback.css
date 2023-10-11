@@ -3,7 +3,7 @@ body{
     height: 140vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #05073a, #dc0606ca);
+    background: #eceaff;
     display: block;
 }
 .contact-form{
@@ -30,14 +30,14 @@ body{
 
 .container{
     max-width: 800px;
-    margin-top: 0 auto;
+    margin-top: -35px ;
 }
 .contact-form h1{
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 400;
-    color: #fff;
-    font-family: 'poppins';
+    font-weight: 500;
+    color: #7d301c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-form h2{
     line-height: 40px;
@@ -140,3 +140,4 @@ textarea{
 .login_b{
     visibility: hidden;
 }
+
