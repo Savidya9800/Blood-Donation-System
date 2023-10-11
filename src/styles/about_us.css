@@ -1,6 +1,6 @@
 body{
     display: flex;
-    height: 200vh;
+    height: 190vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #05073a, #dc0606ca);
@@ -9,8 +9,8 @@ body{
 .container_i{
 margin-top: -450px;
 display: flex;
-width: 100px;
-max-width: 1300px;
+width: 120px;
+max-width: 1800px;
 align-items: center;
 justify-content: center;
 margin: 0 auto;
@@ -25,12 +25,12 @@ margin: 0 auto;
 }
 
 .colage_item{
-    width: calc(20% + 450px);
-    padding: 0 40px;
+    width: calc(26% + 450px);
+    padding: 0 170px;
     margin: 0 -25px;
 }
 .inner-section{
-    width: 107%;
+    width: 150%;
     float: right;
     background-color: #d491f3;
     padding: 90px;
