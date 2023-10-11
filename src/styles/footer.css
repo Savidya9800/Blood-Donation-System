@@ -15,8 +15,8 @@ footer{
      background-color: #000000ff;
      position: relative;
      width: 100%;
-     min-height: 350px;
-     padding: 3rem 1rem;
+     min-height: 0px;
+     padding: auto;
 }
 .container {
     max-width: 1140px;
@@ -91,7 +91,7 @@ footer{
     position: absolute;
     top:5px;
     left:-10px;
-    background-color: #ff014fff;
+    background-color: #5a224f;
     transition: 0.5s ease;
     opacity: 0;
 }
@@ -100,7 +100,7 @@ footer{
 }
 .col .links a:hover{
     transform: translateX(-8px);
-    color:#ff014fff;
+    color:#5a224f;
 }
 .col .contact-details{
     display: inline-flex;
