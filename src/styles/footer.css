@@ -19,7 +19,7 @@ footer{
      padding: auto;
 }
 .container {
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
