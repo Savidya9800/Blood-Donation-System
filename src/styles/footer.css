@@ -45,13 +45,13 @@ footer{
     margin-bottom:25px;
 
 }
-.col h3{
+.col h4{
     color:#5a224f;
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
 }
-.col h3::after{
+.col h4::after{
     content: '';
     height:3px;
     width:0px;
@@ -63,7 +63,7 @@ footer{
     transition: 0.3s ease;
 
 }
-.col h3:hover::after{
+.col h4:hover::after{
     width:30px
 }
 .col .social a i{
