@@ -4,6 +4,7 @@
       $PASSWORD='';
       $DATABASE='blood_donation_system';
 
+      //Database Connection
       $CONNECT=mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 
       if(!$CONNECT){
