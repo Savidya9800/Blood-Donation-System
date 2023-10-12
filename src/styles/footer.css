@@ -41,8 +41,9 @@ footer{
     padding:0 2rem;
 }
 .col .logo{
-    width: 300px;
-    margin-bottom:25px;
+    width: 400px;
+    margin-bottom:15px;
+    margin-left: 2px;
 
 }
 .col h4{
