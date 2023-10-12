@@ -10,7 +10,7 @@ body{
 margin-top: -450px;
 display: flex;
 width: 120px;
-max-width: 1800px;
+max-width: 100%;
 align-items: center;
 justify-content: center;
 margin: 0 auto;

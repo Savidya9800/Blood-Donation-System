@@ -19,7 +19,7 @@ footer{
      padding: auto;
 }
 .container {
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -41,8 +41,9 @@ footer{
     padding:0 2rem;
 }
 .col .logo{
-    width: 300px;
-    margin-bottom:25px;
+    width: 400px;
+    margin-bottom:15px;
+    margin-left: 2px;
 
 }
 .col h4{
