@@ -6,8 +6,8 @@
         <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -27,7 +27,6 @@
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
-                <!--User Profile-->
                 <!--User Profile-->
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
@@ -69,6 +68,7 @@
                     <button type="submit"><img src="img/search.png"></button>
                 </form>
                 </div>
+                
                 <div class="contact-form">
                     <h1>Contact Us</h1>
                     <div class="container">
@@ -139,5 +139,13 @@
         <hr color="white" width="100%"><br>
         <p class="copyright">@Copyright; Designed by Groupe_4.2</p>
      </footer>
+     <!--js link-->        
+     <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+     <script>
+     let subMenu = document.getElementById("subMenu");
+             function toggleMenu(){
+                 subMenu.classList.toggle("open-menu");
+             }  
+     </script>
     </body>
 </html>
