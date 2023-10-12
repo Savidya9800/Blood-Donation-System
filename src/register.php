@@ -1,5 +1,5 @@
 <?php
-include "Reg-connect.php";
+include "connect.php";
 
 $REGISTER_FIRSTNAME = $_POST ['firstName'];
 $REGISTER_LASTNAME = $_POST ['lastName'];
