@@ -1,0 +1,36 @@
+
+.locate {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.topic {
+    padding: 10px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+} 
+
+.images {
+    width: 50%;
+}
+
+.text {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.map {
+    float: right;
+    width: 30%;
+}
+
+.login_b{
+    visibility: hidden;
+}

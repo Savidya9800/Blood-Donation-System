@@ -1,0 +1,55 @@
+h1 {
+    text-indent: 50px;
+    color: black;
+    font-size: 300%;
+    font-style:unset;
+    text-align: center;
+}
+
+h2 {
+    text-indent: 50px;
+    color: rgb(63, 58, 58);
+    font-size: 150%;
+    font-style:inherit;
+    text-align: center;
+}
+
+p {
+    text-indent: 50px;
+    color: rgb(63, 58, 58);
+    font-size: 110%;
+    font-style:inherit;
+    text-align: center;
+}
+
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+    max-width: 1100px; 
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.image {
+    padding: 10px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.login_b{
+    visibility: hidden;
+}
+
+

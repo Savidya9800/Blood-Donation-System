@@ -8,80 +8,82 @@
         <link rel="stylesheet" href="styles/register.css">
     </head>
     <body>
-        <div class="container">
-            <div class="heading">Registration</div>
-            <form action="#">
-                <div class="card-details">
+        <body>
+            <div class="container">
+                <div class="heading">Registration</div>
+                <form action="register.php" method="POST">
+                    <div class="card-details">
+                        <div class="card-box">
+                            <spam class="details">First Name</spam>
+                            <input type="text" placeholder="First Name" name="firstName"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Age</spam>
+                            <input type="text" placeholder="Age" name="age"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Last Name</spam>
+                            <input type="text" placeholder="Last Name" name="lastName"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Weight</spam>
+                            <input type="text" placeholder="Weight" name="weight"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Email</spam>
+                            <input type="email" placeholder="Email Address" name="email"> 
+                        </div>
+                        <div class="card-box">
+                            <spam class="details">Address</spam>
+                            <input type="text" placeholder="Address" name="address"> 
+                        </div>   
+                        <div class="card-box">
+                            <spam class="details">Date of Birth</spam>
+                            <input type="date" name="birthday"> 
+                        </div> 
+                        <div class="card-box">
+                            <spam class="details">Blood Group</spam>
+                            <select class="option_c" name="b_group">
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="circle-form">
+                        <spm class="circle-title">Gender</spm>
+                        <div class="category">
+                            <input class="radio_c" type="radio" name="gender" value="m"><label for="" class="rtx">Male</label>
+                            <input type="radio" name="gender" value="f"><label for="" class="rtx">Female</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--username pw section-->
+                    <div class="card-details">
                     <div class="card-box">
-                        <spam class="details">First Name</spam>
-                        <input type="text" placeholder="First Name"> 
+                        <spam class="details">Username</spam>
+                        <input type="text" placeholder="Enter Valid Username" name="userName"> 
                     </div>
                     <div class="card-box">
-                        <spam class="details">Age</spam>
-                        <input type="text" placeholder="Age"> 
+                        <spam class="details">Password</spam>
+                        <input type="password" placeholder="Enter Valid Password" name="password"> 
                     </div>
                     <div class="card-box">
-                        <spam class="details">Last Name</spam>
-                        <input type="text" placeholder="Last Name"> 
+                        <spam class="details">Confirm Password</spam>
+                        <input type="password" placeholder="Confirm Password" name="c_password"> 
                     </div>
-                    <div class="card-box">
-                        <spam class="details">Weight</spam>
-                        <input type="text" placeholder="Weight"> 
+                     </div>
+                     
+                    <div class="button" id="continue">
+                        <input type="submit" value="Continue">
                     </div>
-                    <div class="card-box">
-                        <spam class="details">Email</spam>
-                        <input type="email" placeholder="Email Address"> 
-                    </div>
-                    <div class="card-box">
-                        <spam class="details">Address</spam>
-                        <input type="text" placeholder="Address"> 
-                    </div>   
-                    <div class="card-box">
-                        <spam class="details">Date of Birth</spam>
-                        <input type="date"> 
-                    </div> 
-                    <div class="card-box">
-                        <spam class="details">Blood Group</spam>
-                        <select class="option_c">
-                            <option>A+</option>
-                            <option>A-</option>
-                            <option>B+</option>
-                            <option>B-</option>
-                            <option>AB+</option>
-                            <option>AB-</option>
-                            <option>O+</option>
-                            <option>O-</option>
-                        </select>
-                    </div>  
-                </div>
-                <div class="circle-form">
-                    <spm class="circle-title">Gender</spm>
-                    <div class="category">
-                        <input class="radio_c" type="radio" name="Gender"><label for="" class="rtx">Male</label>
-                        <input type="radio" name="Gender"><label for="" class="rtx">Female</label>
-                    </div>
-                </div>
-                <hr>
-                <!--username pw section-->
-                <div class="card-details">
-                <div class="card-box">
-                    <spam class="details">Username</spam>
-                    <input type="text" placeholder="Enter Valid Username"> 
-                </div>
-                <div class="card-box">
-                    <spam class="details">Password</spam>
-                    <input type="password" placeholder="Enter Valid Password"> 
-                </div>
-                <div class="card-box">
-                    <spam class="details">Confirm Password</spam>
-                    <input type="password" placeholder="Confirm Password"> 
-                </div>
-                 </div>
-                <div class="button">
-                    <input type="submit" value="Continue">
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    </body>
-</html>
+        </body>
+    </html>

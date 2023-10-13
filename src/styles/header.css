@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-size: 100% 50%;
+}
+
 .hero{
     width: 100%;
     min-height: 100vh;
