@@ -58,4 +58,8 @@ body, ul, li {
     border-radius: 8px;
 }
 
+.login_b{
+    visibility: hidden;
+}
+
 

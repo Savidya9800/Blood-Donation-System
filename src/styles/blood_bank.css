@@ -1,11 +1,5 @@
-
-
-h2 #header {
-    font-size: 80px;
-}
-
-.two a:hover {
-    background: white;
+.header {
+    font-size: 60px;
 }
 
 .blood1 {
@@ -39,7 +33,8 @@ h2 #header {
 }
 
 .btn-designs #btn2 {
-    margin: 20px 0 -20px 100px;
+    margin: 50px 0 30px 100px;
+    padding: 20px;
     height: 70px;
     width: 20%;
     background: #69275c;
@@ -62,7 +57,39 @@ h2 #header {
     font-weight: 600;
 }
 
+#btn1:hover {
+    background: red;
+}
+
+#btn2:hover {
+    background: red;
+}
+
+#btn3:hover {
+    background: red;
+}
+
+.blood1 p {
+    font-weight: 500;
+}
+
+.blood2 p {
+    font-weight: 500;
+}
+
 .image1 {
     width: 20%;
 
+}
+
+.page{
+    margin-top: -560px;
+}
+
+.login_b{
+    visibility: hidden;
+}
+
+body{
+    background-color: #eceaff;
 }

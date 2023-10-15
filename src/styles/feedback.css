@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-
+body{
+    display: flex;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    background: #eceaff;
+    display: block;
 }
 .contact-form{
     margin-top: -300px;
     position: relative;
     min-height: 100vh;
     z-index: 0;
-    background: #eceaff;
     padding: 30px;
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     align-items: center;
+    
 }
+
 .container{
     max-width: 800px;
-    margin-top: 0 auto;
+    margin-top: 0 auto ;
 }
 .contact-form h1{
     text-align: center;
@@ -127,7 +128,7 @@ textarea{
     }
 }
 
-.logo_img{
+.login_b{
     visibility: hidden;
 }
 
@@ -135,6 +136,6 @@ textarea{
     visibility: hidden;
 }
 
-.login_b{
+.logo_img{
     visibility: hidden;
 }
