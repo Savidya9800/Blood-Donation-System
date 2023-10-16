@@ -74,23 +74,17 @@ body {
 
 form .btn {
     height: 40px;
-    margin: 40px 0 10px 250px;
-}
-
-form .btn input {
-    height: 100%;
+    margin: 40px 0 10px 200px;
+    width: 30%;
     width: 30%;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 800;
     background: #69275c;
+    color: white;
     cursor: pointer;
 }
 
-form .btn input:hover {
+form .btn:hover {
     background: linear-gradient(135deg, #05073a, #dc0606ca);
-}
-
-.type .appoinment_type .dot {
-    background: red;
 }

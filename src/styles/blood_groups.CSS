@@ -1,3 +1,7 @@
+.pahe {
+    margin-top: -200px;
+}
+
 h1 {
     text-indent: 50px;
     color: black;
@@ -22,6 +26,10 @@ p {
     text-align: center;
 }
 
+.para {
+    margin: 20px;
+    
+}
 
 body, ul, li {
     margin: 0;
@@ -30,6 +38,7 @@ body, ul, li {
 }
 
 .image-grid {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px; 
@@ -41,6 +50,7 @@ body, ul, li {
     padding: 10px;
     text-align: center;
 }
+
 
 .image img {
     max-width: 100%;
