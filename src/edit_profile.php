@@ -51,9 +51,9 @@ else{
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
-                         
+                        <?php echo '  
                             <img src="img/user profile icons/user.png">
-                            <h5>Savidya Jayalath</h5>
+                            <h5>'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h5>
                         </div>
                         <hr>
                         <a href="edit_profile.php" class="sub-menu-link">
@@ -128,8 +128,7 @@ else{
                                             </div>
                                         </div>
                                         <hr class="border-light m-0"> 
-                                        <div class="card-body">
-                                        <?php echo ' 
+                                        <div class="card-body">                           
                                             <div class="form-group">
                                                 <label class="form-label">Username</label>
                                                 <!--Username shoud be updated which recorded in registation-->
