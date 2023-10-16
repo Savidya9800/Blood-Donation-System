@@ -22,7 +22,6 @@ else{
 }    
 ?>
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -332,7 +331,7 @@ else{
                 </script>
             </div>
     <!--js link-->        
-        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+        <script src="js/myscript.js"></script>    
         <script>
         let subMenu = document.getElementById("subMenu");
                 function toggleMenu(){
