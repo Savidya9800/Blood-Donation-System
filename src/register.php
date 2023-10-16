@@ -20,6 +20,9 @@ $sql="INSERT INTO register (R_Firstname, R_Lastname, R_Age, R_Weight, R_Email, R
 $result = mysqli_query($CONNECT, $sql);
 
 if($result) {
+
+    header("location:after_login.html");
+
     echo "<script>alert('Inserted successfully!')</script>";
 } else {
     echo "<script>alert('Insertion failed!')</script>";
