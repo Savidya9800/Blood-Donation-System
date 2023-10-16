@@ -1,7 +1,7 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Sa1235";
+$REGISTER_USERNAME = "Savidya25";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -47,11 +47,13 @@ else{
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
                 <!--User Profile-->
+                
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
+                        <?php echo '  
                             <img src="img/user profile icons/user.png">
-                            <h3>Savidya Jayalath</h3>
+                            <h5>'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h5>
                         </div>
                         <hr>
                         <a href="edit_profile.html" class="sub-menu-link">
@@ -125,8 +127,7 @@ else{
                                                 <div id="txt">Allowed JPG, GIF or PNG. Max size of 800K</div>
                                             </div>
                                         </div>
-                                        <hr class="border-light m-0">
-                                        <?php echo '           
+                                        <hr class="border-light m-0"> 
                                         <div class="card-body">
                                             <div class="form-group">
                                                 <label class="form-label">Username</label>
