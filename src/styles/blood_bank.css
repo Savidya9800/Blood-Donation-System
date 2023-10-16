@@ -1,3 +1,16 @@
+.page{
+    margin-top: -460px;
+}
+
+body{
+    background-color: #eceaff;
+}
+
+.image1 #img1 {
+    width: 35%;
+    float: right;
+}
+
 .header {
     font-size: 60px;
 }
@@ -77,19 +90,7 @@
     font-weight: 500;
 }
 
-.image1 {
-    width: 20%;
-
-}
-
-.page{
-    margin-top: -560px;
-}
-
 .login_b{
     visibility: hidden;
 }
 
-body{
-    background-color: #eceaff;
-}
