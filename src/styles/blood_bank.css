@@ -6,9 +6,11 @@ body{
     background-color: #eceaff;
 }
 
+
 .image1 #img1 {
-    width: 35%;
+    width: 30%;
     float: right;
+    margin-top: -180px;
 }
 
 .header {

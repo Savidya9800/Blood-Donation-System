@@ -215,3 +215,27 @@ nav ul li a:hover{
     margin-right: 5px;
 }
 
+.appointment {
+    margin-top: -250px;
+    
+}
+
+.app {
+    border-radius: 20px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background: #69275c;
+    float: right;
+}
+
+.app #btn {
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
