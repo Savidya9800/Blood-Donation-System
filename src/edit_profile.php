@@ -1,8 +1,7 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Savidya25
-";
+$REGISTER_USERNAME = "Sa1235";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -21,7 +20,6 @@ else{
     echo "0 results";
 }    
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -332,7 +330,7 @@ else{
                 </script>
             </div>
     <!--js link-->        
-        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+        <script src="js/myscript.js"></script>    
         <script>
         let subMenu = document.getElementById("subMenu");
                 function toggleMenu(){
