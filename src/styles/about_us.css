@@ -31,7 +31,7 @@ margin: 0 auto;
 }
 .inner-section{
     width: 150%;
-    float: right;
+    float: center;
     background-color: #d491f3;
     padding: 90px;
     box-shadow: 13px 12px 8px rgba(0,0,0,0.3);

@@ -1,8 +1,7 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Savidya25
-";
+$REGISTER_USERNAME = "Savidya25";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -21,7 +20,6 @@ else{
     echo "0 results";
 }    
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -49,14 +47,16 @@ else{
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
                 <!--User Profile-->
+                
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
+                        <?php echo '  
                             <img src="img/user profile icons/user.png">
-                            <h3>Savidya Jayalath</h3>
+                            <h5>'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h5>
                         </div>
                         <hr>
-                        <a href="edit_profile.html" class="sub-menu-link">
+                        <a href="edit_profile.php" class="sub-menu-link">
                             <img src="img/user profile icons/profile.png">
                             <p>Edit Profile</p>
                             <span>></span>
@@ -127,9 +127,8 @@ else{
                                                 <div id="txt">Allowed JPG, GIF or PNG. Max size of 800K</div>
                                             </div>
                                         </div>
-                                        <hr class="border-light m-0">
-                                        <?php echo '           
-                                        <div class="card-body">
+                                        <hr class="border-light m-0"> 
+                                        <div class="card-body">                           
                                             <div class="form-group">
                                                 <label class="form-label">Username</label>
                                                 <!--Username shoud be updated which recorded in registation-->
@@ -332,7 +331,7 @@ else{
                 </script>
             </div>
     <!--js link-->        
-        <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+        <script src="js/myscript.js"></script>    
         <script>
         let subMenu = document.getElementById("subMenu");
                 function toggleMenu(){
