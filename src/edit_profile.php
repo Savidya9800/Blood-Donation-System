@@ -1,3 +1,33 @@
+<?php 
+include "connect.php";
+
+$REGISTER_USERNAME = "Bhawi258";
+
+$sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
+
+$output = mysqli_query($CONNECT, $sql);
+
+if($output){
+    while($row =mysqli_fetch_assoc($output)){
+        $REGISTER_FIRSTNAME = $row ['R_Firstname'];
+        $REGISTER_LASTNAME = $row ['R_Lastname'];
+        $REGISTER_EMAIL = $row ['R_Email'];
+        $REGISTER_ADDRESS = $row ['R_Address'];
+        $REGISTER_BIRTHDAY = $row ['R_Birthday'];
+    }
+}
+else{
+    echo "0 results";
+}
+        // $REGISTER_USERNAME = isset($REGISTER_USERNAME) ? $REGISTER_USERNAME : "";
+        // $REGISTER_FIRSTNAME = isset( $REGISTER_FIRSTNAME) ? $REGISTER_USERNAME : "";
+        // $REGISTER_LASTNAME = isset($REGISTER_LASTNAME) ? $REGISTER_USERNAME : "";
+        // $REGISTER_EMAIL = isset($REGISTER_EMAIL) ? $REGISTER_USERNAME : "";
+        // $REGISTER_ADDRESS = isset($REGISTER_ADDRESS) ? $REGISTER_USERNAME : "";
+        // $REGISTER_BIRTHDAY = isset($REGISTER_USERNAME) ?$REGISTER_BIRTHDAY : "";     
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -103,25 +133,26 @@
                                             </div>
                                         </div>
                                         <hr class="border-light m-0">
+                                        <?php echo '           
                                         <div class="card-body">
                                             <div class="form-group">
                                                 <label class="form-label">Username</label>
                                                 <!--Username shoud be updated which recorded in registation-->
-                                                <label class="form-control mb-1">Savidya257</label>
+                                                <label class="form-control mb-1">'.$REGISTER_USERNAME.'</label>
                                             </div>
                                             <div class="form-group">
                                                 <!--First name shoud be updated which recorded in registation-->
                                                 <label class="form-label">First Name</label>
-                                                <label class="form-control">Savidya</label>
+                                                <label class="form-control"> '.$REGISTER_FIRSTNAME.'</label>
                                             </div>
                                             <div class="form-group">
                                                 <!--Last name shoud be updated which recorded in registation-->
                                                 <label class="form-label">Last Name</label>
-                                                <label class="form-control">Jayalath</label>
+                                                <label class="form-control">'.$REGISTER_LASTNAME.'</label>
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">E-mail</label>
-                                                <label class="form-control mb-1">Savidyajayalath@icloud.com</label>
+                                                <label class="form-control mb-1">'.$REGISTER_EMAIL.'</label>
                                                 <div class="alert alert-warning mt-3">
                                                     Your email is not confirmed. Please check your inbox.<br>
                                                     <a href="https://accounts.google.com/">Resend confirmation</a>
@@ -129,12 +160,13 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">Address</label>
-                                                <labele class="form-control">400 Broome St, New York, NY 10013, USA</labele>
-                                            </div><br>
+                                                <labele class="form-control">'.$REGISTER_ADDRESS.'</labele>
+                                            </div><br> 
                                             <div class="form-group">
-                                                <button class="btn_del">Delete Account</button>
+                                                <a href="delete.php?user_delete='.$REGISTER_USERNAME.'"><button class="btn_del" name="user_delete">Delete Account</button></a>
                                             </div>
-                                        </div>
+                                        </div> 
+                                        
                                     </div>
                                     <div class="tab-pane fade" id="account-change-password">
                                         <div class="card-body pb-2">
@@ -157,12 +189,13 @@
                                             <div class="form-group">
                                                 <label class="form-label">Bio</label>
                                                 <textarea class="form-control"
-                                                    rows="5">A dedicated blood donor, has saved countless lives through his selfless contributions. With over 50 donations, he exemplifies compassion and community service. Generosity embodies the true spirit of altruism, making him a hero in the eyes of those he's helped.</textarea>        
+                                                    rows="5">A dedicated blood donor, has saved countless lives through his selfless contributions. With over 50 donations, he exemplifies compassion and community service. Generosity embodies the true spirit of altruism, making him a hero in the eyes of those hes helped.</textarea>        
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">Birthday</label>
-                                                <label class="form-control">Aug 25,2002</label>
-                                            </div>
+                                                <label class="form-control">'.$REGISTER_BIRTHDAY.'</label>
+                                            </div> '
+                                            ?>
                                             <div class="form-group">
                                                 <label class="form-label">Country</label>
                                                 <select class="custom-select">

@@ -33,7 +33,7 @@ body , html {
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url("/src/img/bl42.jpg");
+    background-image: url('.img/bl42.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
