@@ -35,13 +35,14 @@ footer{
 }
 
 .col{
-    min-width: 250px;
+    min-height: 60px;
+    min-width: 230px;
     color:#f2f2f2f2;
     font-family: poppins;
     padding:0 2rem;
 }
 .col .logo{
-    width: 400px;
+    width: 300px;
     margin-bottom:15px;
     margin-left: 2px;
 
