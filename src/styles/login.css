@@ -102,6 +102,22 @@ input[type="submit"]:hover{
     border-color: rgb(72, 105, 182);
     transition: .3s;
 }
+.button {
+    padding: 10px 0;
+    margin: 8px auto; /* Center horizontally by setting left and right margins to "auto" */
+    height: 100%;
+    width: 50%;
+    display: block; /* Make it a block-level element for the margin:auto; to work */
+    outline: none;
+    text-align: center; /* Center text inside the button */
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #15073a, #dc0606ca);    
+}
 .signup_link{
     margin: 30px 0;
     text-align: center;
