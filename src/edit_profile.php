@@ -19,13 +19,7 @@ if($output){
 }
 else{
     echo "0 results";
-}
-        // $REGISTER_USERNAME = isset($REGISTER_USERNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_FIRSTNAME = isset( $REGISTER_FIRSTNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_LASTNAME = isset($REGISTER_LASTNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_EMAIL = isset($REGISTER_EMAIL) ? $REGISTER_USERNAME : "";
-        // $REGISTER_ADDRESS = isset($REGISTER_ADDRESS) ? $REGISTER_USERNAME : "";
-        // $REGISTER_BIRTHDAY = isset($REGISTER_USERNAME) ?$REGISTER_BIRTHDAY : "";     
+}    
 ?>
 
 
