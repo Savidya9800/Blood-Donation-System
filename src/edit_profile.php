@@ -1,7 +1,8 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Bhawi258";
+$REGISTER_USERNAME = "Savidya25
+";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -18,13 +19,7 @@ if($output){
 }
 else{
     echo "0 results";
-}
-        // $REGISTER_USERNAME = isset($REGISTER_USERNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_FIRSTNAME = isset( $REGISTER_FIRSTNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_LASTNAME = isset($REGISTER_LASTNAME) ? $REGISTER_USERNAME : "";
-        // $REGISTER_EMAIL = isset($REGISTER_EMAIL) ? $REGISTER_USERNAME : "";
-        // $REGISTER_ADDRESS = isset($REGISTER_ADDRESS) ? $REGISTER_USERNAME : "";
-        // $REGISTER_BIRTHDAY = isset($REGISTER_USERNAME) ?$REGISTER_BIRTHDAY : "";     
+}    
 ?>
 
 
