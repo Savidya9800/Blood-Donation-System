@@ -1,0 +1,74 @@
+.page {
+    background: lightgray;
+    height: 100vh;
+}
+
+.btn-design1 button {
+    border-radius: 10px;
+    width: 15%;
+    height: 50px;
+    background: #69275c;
+    text-align: center;
+    margin: auto;
+}
+
+.btn-design1 #btn1 {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.btn-design2 {
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background: lemonchiffon;
+}
+
+.btn-design2 #btn2 {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-design3 {
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background: #69275c;
+}
+
+.btn-design3 #btn3 {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-design2:hover {
+    background: white;
+    color: black;
+}
+
+.btn-design3:hover {
+    background: red;
+    color: black;
+}
+
+.tbl {
+    padding: 0;
+    width: 100%;
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+}
+
+.tbl th,td {
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.tbl th {
+    font-size: 20px;
+}
+
