@@ -1,7 +1,7 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Savidya25";
+$REGISTER_USERNAME = "Bhawi26";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
