@@ -5,20 +5,22 @@
 
 }
 body{
+    background-size: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 10vh;
 }
 footer{
+    justify-content: center;
+    align-items: center;
      background-color: rgb(0, 0, 0);
-     position: relative;
+     display: flex;
      width: 100%;
-     padding: 14px -200%;
      padding: auto;
 }
-.container {
+.fcontainer {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -27,39 +29,39 @@ footer{
     flex-direction: column;
 }
 .row{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .col{
-    min-height: 30px;
-    min-width: auto;
-    color:#f2f2f2f2;
+    font-size: small;
+    min-height: 50px;
+    min-width: 520px;
+    color:#fffffff2;
     font-family: poppins;
     padding:0 2rem;
 }
 .col .logo{
-    width: 300px;
+    width: 250px;
     margin-bottom:15px;
     margin-left: 2px;
 
 }
 .col h4{
     color:#5a224f;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     cursor: pointer;
 }
 .col h4::after{
-    content: '';
-    height:3px;
+   
     width:0px;
+    margin-bottom: -5px;
     background-color: #5a224f;
     position: absolute;
-    bottom: 0;
-    left:0;
-    top: -30px;
+    top: -5px;
     transition: 0.3s ease;
 
 }
@@ -80,8 +82,7 @@ footer{
     display: block;
     text-decoration: none;
     color:#f2f2f2;
-    margin-bottom: 5px;
-    position: relative;
+    margin-bottom: -2px;
     transition: 0.3s ease;
 }
 .col .links a::before{
@@ -90,7 +91,7 @@ footer{
     width:3px;
     position: absolute;
     top:5px;
-    left:-10px;
+    left: -10px;
     background-color: #5a224f;
     transition: 0.5s ease;
     opacity: 0;
@@ -107,9 +108,12 @@ footer{
     justify-content: space-between;
 }
 .col .contact-details i{
-    margin-right:15px;
+    margin-right:10px;
 }
 .copyright{
     color: #f2f2f2;
     text-align: center;
+    background-color: rgb(36, 34, 34);
+    padding: 3px 0;
+    width: 100%;
 }
