@@ -1,3 +1,26 @@
+<?php 
+include "connect.php";
+
+session_start();
+
+if(isset($_SESSION['username'])){
+    $REGISTER_USERNAME = $_SESSION['username'];
+}
+
+$sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
+
+$output = mysqli_query($CONNECT, $sql);
+
+if($output){
+    while($row =mysqli_fetch_assoc($output)){
+        $REGISTER_FIRSTNAME = $row ['R_Firstname'];
+        $REGISTER_LASTNAME = $row ['R_Lastname'];
+    }
+}
+else{
+    echo "0 results";
+}    
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,6 +30,8 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/donation.css">
         <link rel="stylesheet" href="styles/footer.css">
+
+        
     </head>
 <body>
     <!--Navbar-->
@@ -15,11 +40,11 @@
         <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
         <ul class="nav_links">
             <li><a href="home.html">Home</a></li>
-            <li><a href="donation.html">Donation</a></li>
-            <li><a href="blood_bank.html">Blood Bank</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="donation.php">Donation</a></li>
+            <li><a href="blood_bank.php">Blood Bank</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about_us.php">About us</a></li>
+            <li><a href="feedback.php">Feedback</a></li>
         </ul>
         <img src="./img/menu.png" alt="" class="menu-btn">
         <!--user image-->
@@ -29,7 +54,9 @@
                 <div class="sub-menu">
                     <div class="user-info">
                         <img src="img/user profile icons/user.png">
-                        <h3>Savidya Jayalath</h3>
+                        <?php echo ' 
+                            <h3>'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h3>';
+                            ?>
                     </div>
                     <hr>
                     <a href="edit_profile.php" class="sub-menu-link">
@@ -56,7 +83,7 @@
             <!--Login Button-->
             <a href="login.html"><button class="login_b">LOGIN</button> </a>
     </nav>    
-    <header>
+    <header style="background-image: url('img/bl42.jpg');">
         <div class="header-content">
             <h2>Be A Hero</h2>
             <div class="line"></div>
@@ -101,7 +128,7 @@
         </div>
     </section> 
     
-    <section class="explore">
+    <section class="explore" style="background-image: url('img/bl38.jpg')">
         <div class="explore-content">
             <h1>Explore the Blood</h1>
             <div class="line"></div>

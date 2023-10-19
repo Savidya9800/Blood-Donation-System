@@ -1,17 +1,39 @@
+<?php 
+include "connect.php";
+
+session_start();
+
+if(isset($_SESSION['username'])){
+    $REGISTER_USERNAME = $_SESSION['username'];
+}
+
+$sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
+
+$output = mysqli_query($CONNECT, $sql);
+
+if($output){
+    while($row =mysqli_fetch_assoc($output)){
+        $REGISTER_FIRSTNAME = $row ['R_Firstname'];
+        $REGISTER_LASTNAME = $row ['R_Lastname'];
+    }
+}
+else{
+    echo "0 results";
+}    
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Life Blood Save a Life</title>
+        <title>Life Blood Save a Life | Contact</title>
         <!--set an icon to browser-->
         <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <link rel="stylesheet" href="styles/blood_bank.css">
-        <script src="js/myscript.js"></script>
-        <script>
-            alert("Blood bank page is loaded");
-        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
         <div class="hero">
@@ -19,21 +41,23 @@
                 <!--logo_txt-->
                 <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="donation.html">Donation</a></li>
-                <li><a href="blood_bank.html">Blood Bank</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="home.html">Home</a></li>
+                <li><a href="donation.php">Donation</a></li>
+                <li><a href="blood_bank.php">Blood Bank</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="feedback.php">Feedback</a></li>
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
                 <!--User Profile-->
-                <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu-wrap" id="subMenu" style = "z-index: 1;">
                     <div class="sub-menu">
                         <div class="user-info">
                             <img src="img/user profile icons/user.png">
-                            <h3>Savidya Jayalath</h3>
+                            <?php echo ' 
+                            <h3>'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h3>';
+                            ?>
                         </div>
                         <hr>
                         <a href="edit_profile.php" class="sub-menu-link">
@@ -58,7 +82,7 @@
                     </div>
                 </div>
                 <!--Login Button-->
-                <a href="login.php"><button class="login_b">LOGIN</button> </a>
+                <a href="login.html"><button class="login_b">LOGIN</button> </a>
             </nav>
             <!--Logo image-->
             <img class="logo_img" src="img/life blood logo.png" alt="logo_img BLOOD LIFE">
@@ -69,35 +93,30 @@
                     <button type="submit"><img src="img/search.png"></button>
                 </form>
                 </div>
-        </div>
-            <div class="page" style="margin-top: -550px";>
-                <div class="blood1">
-                    <h2 class="header">Where can I donate?</h2>
-                    <p>Find a donation campaign...</p>
-                    <div class="btn-designs">
-                        <button id="btn1" onclick="bloodDonation('btn1')">Find Location</button>
-                    </div>
-                    <div class="image1">
-                        <img id="img1" src="img/bloodd1.jpg" alt="camp">
-                    </div>
-                </div>
-                <div class="blood2">
-                    <h2 class="header">Do you know about blood groups?</h2>
-                    <p>A key component of our biological identity is blood blood type,also known as blood groups.<br> 
-                        There are different blood groups around the world. 
-                        The well-known blood group <br>system is the ABO system that classifies blood into type A,B,AB and O.<br>Learn more.....
-                    </p>
-                    <div class="btn-designs">
-                        <button id="btn2" onclick="bloodDonation('btn2')">Blood Groups</button>
-                    </div>
-                    <div class="image2">
-                    </div>
-                </div>
                 
+                <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <div class="container">
+                        <div class="main">
+                            <div class="content">
+                                <h2>Contact Us</h2>
+                                <form action="#" method="post">
+                                    <input type="text" name="name" placeholder="Enter Your Name">
+                                  
+                                    <input type="email" name="name" placeholder="Enter Your Email">
+                                    <textarea name="message" placeholder="Mobile Number"></textarea>                   
+                         <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            <div class="form-img">
+                                <img src="img/bg1.png" alt="contact">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            </body>
-             <!--footer-->
-     <footer>
+    <!--footer-->
+    <footer>
         <div class="fcontainer">
             <div class="row">
                   <div class="col">
@@ -113,6 +132,7 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                       </div>
                   </div>
+
                   <div class="col">
                      <h4>Links</h4>
                      <div class="links">
@@ -123,6 +143,7 @@
                     <a href="about_us.html">About us</a>
                      </div>
                   </div>
+
                   <div class="col">
                       <h4>Contact</h4>
                       <div class="contact-details">
@@ -144,13 +165,13 @@
             </div>
         </div>
      </footer>
-    <!--js link-->        
-        <script src="js/myscript.js"></script>    
-        <script>
-        let subMenu = document.getElementById("subMenu");
-                function toggleMenu(){
-                    subMenu.classList.toggle("open-menu");
-                }  
-        </script>
+     <!--js link-->        
+     <script src="js/myscript.js"></script>   
+     <script>
+     let subMenu = document.getElementById("subMenu");
+             function toggleMenu(){
+                 subMenu.classList.toggle("open-menu");
+             }  
+     </script>
     </body>
 </html>

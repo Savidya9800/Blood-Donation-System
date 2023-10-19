@@ -42,11 +42,11 @@ else{
                 <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="donation.html">Donation</a></li>
-                <li><a href="blood_bank.html">Blood Bank</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="donation.php">Donation</a></li>
+                <li><a href="blood_bank.php">Blood Bank</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="feedback.php">Feedback</a></li>
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
