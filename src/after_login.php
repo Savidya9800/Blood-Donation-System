@@ -28,8 +28,8 @@ else{
         <!--set an icon to browser-->
         <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/after_login.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/after_login.css">
     </head>
     <body>
         <div class="hero">
