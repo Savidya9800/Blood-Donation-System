@@ -61,7 +61,7 @@ else{
                             <p>Edit Profile</p>
                             <span>></span>
                         </a>
-                        <a href="setting_privacy.html" class="sub-menu-link">
+                        <a href="setting_privacy.php" class="sub-menu-link">
                             <img src="img/user profile icons/setting.png">
                             <p>Setting & Privacy</p>
                             <span>></span>

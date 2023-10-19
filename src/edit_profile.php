@@ -64,7 +64,7 @@ else{
                             <p>Edit Profile</p>
                             <span>></span>
                         </a>
-                        <a href="setting_privacy.html" class="sub-menu-link">
+                        <a href="setting_privacy.php" class="sub-menu-link">
                             <img src="img/user profile icons/setting.png">
                             <p>Setting & Privacy</p>
                             <span>></span>
@@ -180,7 +180,7 @@ else{
                                                 <label class="form-label">Confirm new password</label>
                                                 <input type="password" class="form-control" name="co_password">
                                             </div>
-                                            <button name="s_button">Submit</button>
+                                            <button style="background: rgb(255, 8, 8);border-color: rgb(255, 8, 8);" class="btn btn-primary" name="s_button">Submit</button>
                                         </div>
                                     </form>
                                     <?php
