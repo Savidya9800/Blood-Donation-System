@@ -4,8 +4,6 @@ error_reporting(E_ALL);
 
 include 'connect.php';
 
-$SURNAME = "root";
-
 if(isset($_POST['submit'])){
     $NAME=$_POST['name'];
     $RATING=$_POST['rating'];
