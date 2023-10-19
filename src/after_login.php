@@ -52,7 +52,7 @@ else{
                         <div class="user-info">
                             <img src="img/user profile icons/user.png">
                             <?php echo ' 
-                            <h3'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h3>';
+                            <h3>'.$REGISTER_FIRSTNAME, $REGISTER_LASTNAME.'</h3>';
                             ?>
                         </div>
                         <hr>
