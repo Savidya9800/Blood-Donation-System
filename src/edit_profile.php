@@ -51,8 +51,7 @@ else{
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
                 <!--User Profile-->
-                
-                <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu-wrap" id="subMenu" style = "z-index: 1;">
                     <div class="sub-menu">
                         <div class="user-info">
                         <?php echo '  
