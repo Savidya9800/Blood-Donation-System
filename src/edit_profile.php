@@ -1,7 +1,7 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Bhawi26";
+$REGISTER_USERNAME = "Savidya25";
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -14,6 +14,7 @@ if($output){
         $REGISTER_EMAIL = $row ['R_Email'];
         $REGISTER_ADDRESS = $row ['R_Address'];
         $REGISTER_BIRTHDAY = $row ['R_Birthday'];
+        $REGISTER_PASSWORD = $row ['R_Password'];
     }
 }
 else{
@@ -161,22 +162,45 @@ else{
                                             </div>
                                         </div> 
                                         
-                                    </div>
+                                    </div>                                   
                                     <div class="tab-pane fade" id="account-change-password">
+                                    <form method="POST">
                                         <div class="card-body pb-2">
                                             <div class="form-group">
                                                 <label class="form-label">Current password</label>
-                                                <input type="password" class="form-control">
+                                                <input type="password" class="form-control" name="cu_password>
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">New password</label>
-                                                <input type="password" class="form-control">
+                                                <input type="password" class="form-control" name="n_password">
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">Confirm new password</label>
-                                                <input type="password" class="form-control">
+                                                <input type="password" class="form-control" name="co_password">
                                             </div>
+                                            <button name="s_button">Submit</button>
                                         </div>
+                                    </form>';
+                                    if(isset($_POST['s_button'])){
+                                        $CURRENT_PASSWORD = $_POST ['cu_password'];
+                                        $NEW_PASSWORD = $_POST ['n_password'];
+                                        $CONFIRM_PASSWORD = $_POST ['co_password'];
+                
+                                        if($REGISTER_PASSWORD == $CURRENT_PASSWORD){
+                                            if($NEW_PASSWORD === $CONFIRM_PASSWORD){
+                
+                                                $CHECK_PASSWORD = "UPDATE `register` SET `R_Password`='$NEW_PASSWORD' WHERE Savidya25 = $REGISTER_USERNAME";
+                                                $CO_CHECK_PASSWORD = mysqli_query($CONNECT,$CHECK_PASSWORD);
+                                                if($CO_CHECK_PASSWORD){
+                                                    echo '<script>Successfully Changed Password</script>';
+                                                }
+                                                else{
+                                                    echo '<script>Failed to Changed Password</script>';
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ?>
                                     </div>
                                     <div class="tab-pane fade" id="account-info">
                                         <div class="card-body pb-2">
@@ -188,8 +212,7 @@ else{
                                             <div class="form-group">
                                                 <label class="form-label">Birthday</label>
                                                 <label class="form-control">'.$REGISTER_BIRTHDAY.'</label>
-                                            </div> '
-                                            ?>
+                                            </div> 
                                             <div class="form-group">
                                                 <label class="form-label">Country</label>
                                                 <select class="custom-select">
