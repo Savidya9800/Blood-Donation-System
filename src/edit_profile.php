@@ -1,7 +1,11 @@
 <?php 
 include "connect.php";
 
-$REGISTER_USERNAME = "Savidya25";
+session_start();
+
+if(isset($_SESSION['username'])){
+    $REGISTER_USERNAME = $_SESSION['username'];
+}
 
 $sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
 
@@ -21,7 +25,6 @@ else{
     echo "0 results";
 }    
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -36,7 +39,7 @@ else{
         <div class="hero">
              <nav>
                 <!--logo_txt-->
-                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+                <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="donation.html">Donation</a></li>
@@ -160,15 +163,15 @@ else{
                                             <div class="form-group">
                                                 <a href="delete.php?user_delete='.$REGISTER_USERNAME.'"><button class="btn_del" name="user_delete">Delete Account</button></a>
                                             </div>
-                                        </div> 
-                                        
+                                        </div> '?>
+                                    
                                     </div>                                   
                                     <div class="tab-pane fade" id="account-change-password">
                                     <form method="POST">
                                         <div class="card-body pb-2">
                                             <div class="form-group">
                                                 <label class="form-label">Current password</label>
-                                                <input type="password" class="form-control" name="cu_password>
+                                                <input type="password" class="form-control" name="cu_password">
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">New password</label>
@@ -180,26 +183,33 @@ else{
                                             </div>
                                             <button name="s_button">Submit</button>
                                         </div>
-                                    </form>';
+                                    </form>
+                                    <?php
                                     if(isset($_POST['s_button'])){
-                                        $CURRENT_PASSWORD = $_POST ['cu_password'];
-                                        $NEW_PASSWORD = $_POST ['n_password'];
-                                        $CONFIRM_PASSWORD = $_POST ['co_password'];
+                                        $CURRENT_PASSWORD = $_POST['cu_password'];
+                                        $NEW_PASSWORD = $_POST['n_password'];
+                                        $CONFIRM_PASSWORD = $_POST['co_password'];
                 
                                         if($REGISTER_PASSWORD == $CURRENT_PASSWORD){
-                                            if($NEW_PASSWORD === $CONFIRM_PASSWORD){
-                
-                                                $CHECK_PASSWORD = "UPDATE `register` SET `R_Password`='$NEW_PASSWORD' WHERE Savidya25 = $REGISTER_USERNAME";
+                                            if($NEW_PASSWORD == $CONFIRM_PASSWORD){
+                                                $CHECK_PASSWORD = "UPDATE register SET R_Password ='$NEW_PASSWORD' WHERE R_Username = '$REGISTER_USERNAME' ";
                                                 $CO_CHECK_PASSWORD = mysqli_query($CONNECT,$CHECK_PASSWORD);
+
                                                 if($CO_CHECK_PASSWORD){
-                                                    echo '<script>Successfully Changed Password</script>';
+                                                    echo "<script>alert('Successfully Changed Password!');</script>";
                                                 }
                                                 else{
-                                                    echo '<script>Failed to Changed Password</script>';
+                                                    echo "<script>alert('Failed to Changed Password!');</script>";
                                                 }
                                             }
-                                        }
-                                    }
+                                            else{
+                                                echo "<script>alert('Password Doesn't Match!');</script>";
+                                            }
+                                        }    
+                                        else{
+                                            echo "<script>alert('Current Password Doesn;t Match!');</script>";
+                                        }  
+                                    }                                     
                                     ?>
                                     </div>
                                     <div class="tab-pane fade" id="account-info">

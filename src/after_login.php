@@ -1,3 +1,26 @@
+<?php 
+include "connect.php";
+
+session_start();
+
+if(isset($_SESSION['username'])){
+    $REGISTER_USERNAME = $_SESSION['username'];
+}
+
+$sql = "SELECT * FROM `register` WHERE `R_Username` = '$REGISTER_USERNAME' ";
+
+$output = mysqli_query($CONNECT, $sql);
+
+if($output){
+    while($row =mysqli_fetch_assoc($output)){
+        $REGISTER_FIRSTNAME = $row ['R_Firstname'];
+        $REGISTER_LASTNAME = $row ['R_Lastname'];
+    }
+}
+else{
+    echo "0 results";
+}    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +35,7 @@
         <div class="hero">
              <nav>
                 <!--logo_txt-->
-                <a href="after_login.html"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
+                <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="donation.html">Donation</a></li>
@@ -28,7 +51,9 @@
                     <div class="sub-menu">
                         <div class="user-info">
                             <img src="img/user profile icons/user.png">
-                            <h3>Savidya Jayalath</h3>
+                            <?php echo ' 
+                            <h3'.$REGISTER_FIRSTNAME.' '.$REGISTER_LASTNAME.'</h3>';
+                            ?>
                         </div>
                         <hr>
                         <a href="edit_profile.php" class="sub-menu-link">
