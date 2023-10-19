@@ -17,7 +17,7 @@
             if($row == 1){
                 $_SESSION['username'] = $uname;
                 echo "<script>alert('Login successful!')</script>";
-                header("location: home.html");
+                header("location: after_login.php");
             }
             else{
                 echo "<script>alert('Login failed!')</script>";

@@ -1,6 +1,6 @@
 body{
     display: flex;
-    height: 140vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     background: #eceaff;
@@ -19,7 +19,7 @@ body{
     
 }
 
-.container{
+.container1{
     max-width: 800px;
     margin-top: 0 auto ;
 }

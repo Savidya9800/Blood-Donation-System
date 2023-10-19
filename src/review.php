@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Training Review Page</title>
-    <link rel="stylesheet" type="text/css" href="review.css">
+    <link rel="stylesheet" type="text/css" href="styles/review.css">
    
 </head>
 <br><br>
