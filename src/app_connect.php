@@ -1,6 +1,6 @@
 <?php
 
-$con=new mysqli('localhost','root','','app');
+$con=new mysqli('localhost','root','','blood_donation_system');
 
 if($con)
 {
