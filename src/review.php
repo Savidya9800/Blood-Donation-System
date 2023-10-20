@@ -37,14 +37,15 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Training Review Page</title>
+    <title>Life Blood Save a Life</title>
+    <link rel="shortcut icon" type="x-icon" href="img/logo icon 123.png">
     <link rel="stylesheet" type="text/css" href="styles/review.css">
    
 </head>
 <br><br>
 
 <body>
-    <h1>Teacher Training Reviews</h1>
+    <h1>Blood Donation Reviews</h1>
     <div class="content">
         <div class="container">
             <h2>Submit a Review</h2>
