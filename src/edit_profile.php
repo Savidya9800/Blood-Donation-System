@@ -42,17 +42,16 @@ else{
                 <a href="after_login.php"><img class="logo" src="img/Life Blood.png" alt="logo"></a>
             <ul class="nav_links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="donation.html">Donation</a></li>
-                <li><a href="blood_bank.html">Blood Bank</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="donation.php">Donation</a></li>
+                <li><a href="blood_bank.php">Blood Bank</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="feedback.php">Feedback</a></li>
             </ul>
             <!--user image-->
                 <img class="user_pic" src="img/user profile icons/user.png" onclick="toggleMenu()">
                 <!--User Profile-->
-                
-                <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu-wrap" id="subMenu" style = "z-index: 1;">
                     <div class="sub-menu">
                         <div class="user-info">
                         <?php echo '  
@@ -65,7 +64,7 @@ else{
                             <p>Edit Profile</p>
                             <span>></span>
                         </a>
-                        <a href="setting_privacy.html" class="sub-menu-link">
+                        <a href="setting_privacy.php" class="sub-menu-link">
                             <img src="img/user profile icons/setting.png">
                             <p>Setting & Privacy</p>
                             <span>></span>
@@ -181,7 +180,7 @@ else{
                                                 <label class="form-label">Confirm new password</label>
                                                 <input type="password" class="form-control" name="co_password">
                                             </div>
-                                            <button name="s_button">Submit</button>
+                                            <button style="background: rgb(255, 8, 8);border-color: rgb(255, 8, 8);" class="btn btn-primary" name="s_button">Submit</button>
                                         </div>
                                     </form>
                                     <?php
